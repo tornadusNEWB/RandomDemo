@@ -10,22 +10,22 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("podaj libcze");
-        int a = scanner.nextInt();
+        int uservalue = scanner.nextInt();
 
         while (value >= 0) {
-            if (a > value) {
-                a++;
-                a = scanner.nextInt();
+            if (uservalue > value) {
+                uservalue++;
+                uservalue = scanner.nextInt();
                 System.out.println("wybrana liczba jest wieksza od wybranej przez komputer");
-                System.out.println("podaj kolejna libcze");
-            } else if (a < value) {
-                a++;
-                a = scanner.nextInt();
+                System.out.println("podaj kolejna liczbe");
+            } else if (uservalue < value) {
+                uservalue++;
+                uservalue = scanner.nextInt();
                 System.out.println("wybrana liczba jest mniejsza od wybranej przez komputer");
-                System.out.println("podaj kolejna libcze");
+                System.out.println("podaj kolejna liczbe");
 
-            } else if ( a == value) {
-                System.out.println("brawo, wygrales za " + a + " razem");
+            } else if ( uservalue == value) {
+                System.out.println("brawo, wygrales za " + uservalue + " razem");
                 break;
             }
 
