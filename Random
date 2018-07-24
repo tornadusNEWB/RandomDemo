@@ -6,20 +6,19 @@ public class Main {
     public static void main(String[] args) {
 
         Random generator = new Random();
-        int value = generator.nextInt(3);
+        int value = generator.nextInt(5);
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("podaj libcze");
         int uservalue = scanner.nextInt();
 
         while (value >= 0) {
+            uservalue++;
             if (uservalue > value) {
-                uservalue++;
                 uservalue = scanner.nextInt();
                 System.out.println("wybrana liczba jest wieksza od wybranej przez komputer");
                 System.out.println("podaj kolejna liczbe");
             } else if (uservalue < value) {
-                uservalue++;
                 uservalue = scanner.nextInt();
                 System.out.println("wybrana liczba jest mniejsza od wybranej przez komputer");
                 System.out.println("podaj kolejna liczbe");
